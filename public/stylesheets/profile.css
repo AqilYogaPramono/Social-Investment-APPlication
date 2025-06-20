@@ -1,0 +1,78 @@
+.frm-profile{
+    background-color: white;
+    padding: 1.5rem !important;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+    width: 70%;
+}.frm-profile .form-control {
+    border-color: #37B7C3;
+}.frm-profile .form-control::placeholder {
+    color: #37B7C3;
+}
+.frm_layout{
+    color: #071952;
+}
+
+input[type="datetime-local"]::placeholder {
+    color: #37B7C3;
+}
+
+
+input[type="datetime-local"]::-webkit-datetime-edit {
+    color: #37B7C3; 
+}
+.frm-profile h4 {
+    font-weight: bold;
+    color: #10266f;
+}
+
+.btn-primary {
+    background-color: #37B7C3; 
+    border-radius: 20px;
+    border-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+}
+
+.btn-primary:hover {
+    background-color: #2b9f9d;
+    border-color: #2b9f9d; 
+}
+
+.profile-photo-label {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    position: relative;
+}
+
+#photoPreview {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #37B7C3;
+    background-color: #ffffff;
+    cursor: pointer;
+    color: rgb(121, 121, 121);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+}
+
+#photoPreview:hover {
+    background-color: #EBF4F6;
+}
+
+.line-divider {
+    border-top: 2px solid #37B7C3;  
+    margin-top: 20px;
+    margin-bottom: 10px;  
+}
+
+@media (max-width: 768px) {
+    .frm-profile{
+        background-color: white;
+        padding: 1.5rem !important;
+        border-radius: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+        width: 90%;
+    }
+}

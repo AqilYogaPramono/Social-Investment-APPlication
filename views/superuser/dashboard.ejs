@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- HEADER -->
+  <%- include('partials/__head.ejs') %>
+
+  <body>
+
+    <!-- NAVBAR -->
+    <%- include('partials/__nav.ejs') %>
+
+
+    <div class="az-content pd-y-20 pd-lg-y-30 pd-xl-y-40">
+      <div class="container">
+          <div class="az-content-body pd-lg-l-40 d-flex flex-column">
+            <h2>Statistik Aplikasi</h2>
+            <div class="row row-sm">
+                <div class="col-sm-6">
+                  <div class="card card-dashboard-two">
+                    <div class="card-header">
+                      <h6><%= superuser.dataUser %></h6>
+                      <b>Total Pengguna Terdaftar</b>
+                    </div><!-- card-header -->
+                    <div class="card-body">
+                      <div class="chart-wrapper">
+                        <div id="flotChart1" class="flot-chart"></div>
+                      </div><!-- chart-wrapper -->
+                    </div><!-- card-body -->
+                  </div><!-- card -->
+                </div><!-- col -->
+                <div class="col-sm-6 mg-t-20 mg-sm-t-0">
+                  <div class="card card-dashboard-two">
+                    <div class="card-header">
+                      <h6><%= superuser.dataAcara %></h6>
+                      <b>Total Acara yang Dibuat</b>
+                    </div><!-- card-header -->
+                    <div class="card-body">
+                      <div class="chart-wrapper">
+                        <div id="flotChart2" class="flot-chart"></div>
+                      </div><!-- chart-wrapper -->
+                    </div><!-- card-body -->
+                  </div><!-- card -->
+                </div><!-- col -->
+              </div><!-- row -->
+              <div class="col-sm-8 col-md-6 mg-t-20 mg-md-t-0">
+                
+            <div class="ht-20"></div>
+                  
+                  <h2>Diagram Statistik Dashboard</h2>
+
+                  <p>Grafik perbandingan total acara dan total user Januari-Desember menunjukkan hubungan antara pertumbuhan user dan jumlah acara, membantu analisis keterkaitan serta evaluasi efektivitas strategi.</p>
+
+                  <div class="legend">
+                    <div class="legend-item">
+                        <div class="legend-box new-customer"></div>
+                        <h6>Total User</h6>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-box returning-customer"></div>
+                        <h6>Total Acara</h6>
+                    </div>
+                  </div>
+
+                  <div class="ht-20"></div>
+
+                  <div class="chartjs-wrapper-demo">
+                      <canvas id="chartBar5" 
+                          data-labels="<%= JSON.stringify(labelsAcara) %>" 
+                          data-data1="<%= JSON.stringify(dataAcara) %>" 
+                          data-data2="<%= JSON.stringify(dataUser) %>">
+                      </canvas>
+                  </div>
+              </div><!-- chartbar5 // CHART DASHBOARD -->
+              
+              <div class="ht-40"></div>
+              
+              <div class="az-footer mg-t-auto">
+                  <div class="container">
+                      <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">
+                          <p>&copy; 2024 Social Investment Application. All Rights Reserved.</p>
+                      </span>
+                  </div><!-- container -->
+              </div><!-- az-footer -->
+          </div><!-- az-content-body -->
+      </div><!-- container -->
+  </div><!-- az-content -->
+  
+
+    <!-- FOOTER -->
+    <%- include('partials/__foot.ejs') %>
+
+  </body>
+</html>
