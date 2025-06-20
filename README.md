@@ -35,10 +35,9 @@ The **Social Investment Application** is a web-based platform designed to track 
 ---
 
 ## System Requirements
-- Node.js (latest version).
-- MySQL Server.
+- Node.js.
+- MySQL.
 - WhatsApp API integration.
-- Supported OS: Windows, macOS, Linux.
 
 ---
 
