@@ -60,7 +60,7 @@ The **Social Investment Application** is a web-based platform designed to track 
 ## Usage
 1. Start the application using **nodemon**:
    ```bash
-   nodemon
+   npm start
    ```
 
 2. Set up WhatsApp connection:
